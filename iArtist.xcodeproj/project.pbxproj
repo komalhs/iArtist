@@ -19,6 +19,7 @@
 		4B1FECB826C9B2BB009F8993 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECB726C9B2BB009F8993 /* Coordinator.swift */; };
 		4B1FECBD26C9B2C7009F8993 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECBC26C9B2C7009F8993 /* MainCoordinator.swift */; };
 		4B1FECC226C9B2E8009F8993 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECC126C9B2E8009F8993 /* Storyboarded.swift */; };
+		4B1FECD126C9B633009F8993 /* TrackDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECD026C9B633009F8993 /* TrackDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4B1FECB726C9B2BB009F8993 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4B1FECBC26C9B2C7009F8993 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		4B1FECC126C9B2E8009F8993 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		4B1FECD026C9B633009F8993 /* TrackDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		4B1FEC6E26C99E60009F8993 /* iArtist */ = {
 			isa = PBXGroup;
 			children = (
+				4B1FECCC26C9B5FC009F8993 /* TableViewCell */,
 				4B1FECB626C9B2A5009F8993 /* Coordinator */,
 				4B1FECAB26C9B040009F8993 /* ViewControllers */,
 				4B1FEC6F26C99E60009F8993 /* AppDelegate.swift */,
@@ -154,6 +157,14 @@
 				4B1FECC126C9B2E8009F8993 /* Storyboarded.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4B1FECCC26C9B5FC009F8993 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FECD026C9B633009F8993 /* TrackDetailTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				4B1FECBD26C9B2C7009F8993 /* MainCoordinator.swift in Sources */,
 				4B1FECAD26C9B063009F8993 /* SearchArtistViewController.swift in Sources */,
 				4B1FECB826C9B2BB009F8993 /* Coordinator.swift in Sources */,
+				4B1FECD126C9B633009F8993 /* TrackDetailTableViewCell.swift in Sources */,
 				4B1FEC7026C99E60009F8993 /* AppDelegate.swift in Sources */,
 				4B1FEC7226C99E60009F8993 /* SceneDelegate.swift in Sources */,
 				4B1FECC226C9B2E8009F8993 /* Storyboarded.swift in Sources */,

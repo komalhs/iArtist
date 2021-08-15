@@ -7,8 +7,9 @@
 
 import UIKit
 
-class SearchArtistViewController: UIViewController, Storyboarded {
+class SearchArtistViewController: UIViewController, Storyboarded, UITextFieldDelegate {
 
+    @IBOutlet weak var artistNameTextField: UITextField!
     weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
@@ -17,6 +18,11 @@ class SearchArtistViewController: UIViewController, Storyboarded {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onSearchArtistClick(){
+        
+        artistNameTextField.resignFirstResponder()
+        coordinator?.goToTracksViewController()
+    }
 
     /*
     // MARK: - Navigation
