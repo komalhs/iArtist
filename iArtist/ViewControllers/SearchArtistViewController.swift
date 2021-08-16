@@ -11,27 +11,36 @@ class SearchArtistViewController: UIViewController, Storyboarded, UITextFieldDel
 
     @IBOutlet weak var artistNameTextField: UITextField!
     weak var coordinator: MainCoordinator?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
+        artistNameTextField.setBorderAndCorner()
     }
     
     @IBAction func onSearchArtistClick(){
         
         artistNameTextField.resignFirstResponder()
-        coordinator?.goToTracksViewController()
+        guard let artistName = artistNameTextField.text else {
+            return
+        }
+        coordinator?.goToTracksViewController(artistName: artistName)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        artistNameTextField.resignFirstResponder()
+        return true
     }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension UIView {
+    
+    func setBorderAndCorner() {
+        
+        let borderColor = UIColor(named: "borderColor")
+        self.layer.borderWidth = 1
+        self.layer.borderColor = borderColor?.cgColor
+        self.layer.cornerRadius = 5
     }
-    */
-
 }

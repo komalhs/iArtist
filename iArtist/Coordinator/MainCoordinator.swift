@@ -22,8 +22,9 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func goToTracksViewController() {
+    func goToTracksViewController(artistName: String) {
         let vc = TracksViewController.instantiate()
+        vc.artistName = artistName
         navigationController.pushViewController(vc, animated: false)
     }
     
