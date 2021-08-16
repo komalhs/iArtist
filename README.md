@@ -1,5 +1,10 @@
 # iArtist
 
+![ScreenShot](https://github.com/komalhs/iArtist/blob/main/iArtist/App%20Screenshot/LaunchScreen.png)
+![ScreenShot](https://github.com/komalhs/iArtist/blob/main/iArtist/App%20Screenshot/SearchScreen.png)
+![ScreenShot](https://github.com/komalhs/iArtist/blob/main/iArtist/App%20Screenshot/TrackList.png)
+
+
 ## Overview
 
 iArtist is an app that allows users to search for artists using the iTunes Search API.
