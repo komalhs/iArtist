@@ -14,7 +14,7 @@ class StringExtensionsTest: XCTestCase {
         
         let dateString = "2007-10-14T12:00:00Z"
         let expectedOutput = "Oct 14,2007"
-        let result = dateString.convertToDisplayFormat()
+        let result = dateString.convertToDisplayFormat(dateFormat: "MMM dd,yyyy")
         XCTAssertEqual(expectedOutput, result)
     }
 

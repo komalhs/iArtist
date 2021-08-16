@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Model object as per Api Response
 struct Tracks: Codable {
     
     let trackCount: Int

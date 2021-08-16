@@ -15,25 +15,21 @@ class TrackDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
-    @IBOutlet weak var trackDetailView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        trackDetailView.setBorderAndCorner()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    /**
+     set values to display in UI outlet
+     - Parameter track: TrackDetails object from API response
+     */
     func set(track: TrackDetails) {
         artistLabel.text = track.artistName
         trackLabel.text = track.trackName
         genreLabel.text = "Genre: \(track.primaryGenreName)"
         priceLabel.text = "Price: \(track.trackPrice) \(track.currency)"
-        releaseDateLabel.text = "Released On: \(track.releaseDate.convertToDisplayFormat())"
+        releaseDateLabel.text = "Released On: \(track.releaseDate.convertToDisplayFormat(dateFormat: "MMM dd,yyyy"))"
     }
 
 }

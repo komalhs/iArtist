@@ -14,6 +14,11 @@ class NetworkManager {
 
     private init() { }
     
+    /**
+     Converts date into display format
+     - Parameter artistName: String input given by user to searh artist's track
+     - Parameter completed: completion handler returns result. Tracks if success, NetworkError if failure
+     */
     func getTrackList(for artistName: String, completed: @escaping (Result<Tracks, NetworkError>) -> Void) {
         let endpoint = baseURL + "search?term=\(artistName)"
         

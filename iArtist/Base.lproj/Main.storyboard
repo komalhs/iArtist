@@ -18,21 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-dR-A9Z">
-                                <rect key="frame" x="0.0" y="44" width="414" height="260"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="T8l-95-UCK"/>
+                                    <constraint firstAttribute="height" constant="150" id="T8l-95-UCK"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Artist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-jR-B9f">
-                                <rect key="frame" x="20" y="406.5" width="374" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-HK-PKZ">
+                                <rect key="frame" x="20" y="306" width="374" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Artist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-jR-B9f">
+                                        <rect key="frame" x="10" y="0.0" width="354" height="40"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="jpw-3Q-5F2"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7vG-sB-z3E"/>
+                                    <constraint firstAttribute="bottom" secondItem="AN9-jR-B9f" secondAttribute="bottom" id="Fms-Ck-MsV"/>
+                                    <constraint firstAttribute="trailing" secondItem="AN9-jR-B9f" secondAttribute="trailing" constant="10" id="MNR-GF-fUW"/>
+                                    <constraint firstItem="AN9-jR-B9f" firstAttribute="leading" secondItem="M5G-HK-PKZ" secondAttribute="leading" constant="10" id="Yrk-P9-owr"/>
+                                    <constraint firstItem="AN9-jR-B9f" firstAttribute="top" secondItem="M5G-HK-PKZ" secondAttribute="top" id="cIP-Ga-wAT"/>
+                                    <constraint firstAttribute="height" constant="40" id="kgM-5n-MbD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </textField>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8z-RW-vJl">
-                                <rect key="frame" x="20" y="476.5" width="374" height="40"/>
+                                <rect key="frame" x="20" y="389" width="374" height="40"/>
                                 <color key="backgroundColor" name="buttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ibj-bm-3eA"/>
@@ -49,16 +62,17 @@
                         <constraints>
                             <constraint firstItem="1ht-dR-A9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Rk-3v-sOo"/>
                             <constraint firstItem="a8z-RW-vJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Xs-0A-H3C"/>
-                            <constraint firstItem="AN9-jR-B9f" firstAttribute="top" secondItem="1ht-dR-A9Z" secondAttribute="bottom" constant="102.5" id="7LP-6d-Xrq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AN9-jR-B9f" secondAttribute="trailing" constant="20" id="AII-f2-Q1G"/>
                             <constraint firstItem="1ht-dR-A9Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EVn-5s-nxh"/>
-                            <constraint firstItem="a8z-RW-vJl" firstAttribute="top" secondItem="AN9-jR-B9f" secondAttribute="bottom" constant="30" id="YnT-kN-hNv"/>
-                            <constraint firstItem="AN9-jR-B9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dlp-RY-SKm"/>
-                            <constraint firstItem="1ht-dR-A9Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iDX-ud-mvS"/>
+                            <constraint firstItem="a8z-RW-vJl" firstAttribute="top" secondItem="M5G-HK-PKZ" secondAttribute="bottom" constant="43" id="I9R-Np-Au5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M5G-HK-PKZ" secondAttribute="trailing" constant="20" id="O7d-Zx-FxB"/>
+                            <constraint firstItem="M5G-HK-PKZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ygh-D1-3ag"/>
+                            <constraint firstItem="M5G-HK-PKZ" firstAttribute="top" secondItem="1ht-dR-A9Z" secondAttribute="bottom" constant="102" id="dr0-XC-arJ"/>
+                            <constraint firstItem="1ht-dR-A9Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="iDX-ud-mvS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a8z-RW-vJl" secondAttribute="trailing" constant="20" id="nT8-hB-RQH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="artistFieldContainer" destination="M5G-HK-PKZ" id="bPa-gc-Bgs"/>
                         <outlet property="artistNameTextField" destination="AN9-jR-B9f" id="o69-yr-eEQ"/>
                     </connections>
                 </viewController>
@@ -74,80 +88,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hxu-uL-XiT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hxu-uL-XiT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" name="borderColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackDetailTableViewCell" rowHeight="152" id="unV-yQ-bjY" customClass="TrackDetailTableViewCell" customModule="iArtist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="152"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackDetailTableViewCell" rowHeight="130" id="unV-yQ-bjY" customClass="TrackDetailTableViewCell" customModule="iArtist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unV-yQ-bjY" id="dNX-Pn-JhW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29p-jx-3Nl">
-                                                    <rect key="frame" x="10" y="5" width="394" height="147"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Artist: Taylor Swift" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ud-g3-aX8">
-                                                    <rect key="frame" x="20" y="12" width="374" height="22"/>
-                                                    <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="19"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Song: Love Story " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezv-Sd-XXA">
-                                                    <rect key="frame" x="20" y="42" width="374" height="20.5"/>
-                                                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="apI-Z6-oRP" userLabel="Genre &amp; Date StackView">
-                                                    <rect key="frame" x="20" y="84.5" width="374" height="20"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-9w-7Hb">
+                                                    <rect key="frame" x="20" y="10" width="374" height="109.5"/>
                                                     <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist: Taylor Swift" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ud-g3-aX8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="22"/>
+                                                            <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="19"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song: Love Story " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezv-Sd-XXA">
+                                                            <rect key="frame" x="0.0" y="31" width="374" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre: Country" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlL-fb-LIu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="20"/>
+                                                            <rect key="frame" x="0.0" y="60.5" width="374" height="20"/>
                                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 19 jan,2020" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-Rw-DSk">
-                                                            <rect key="frame" x="198.5" y="0.0" width="175.5" height="20"/>
-                                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOT-56-B89">
+                                                            <rect key="frame" x="0.0" y="89.5" width="374" height="20"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date: 19 jan,2020" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-Rw-DSk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.99 USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Od-uvq">
+                                                                    <rect key="frame" x="187" y="0.0" width="187" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-Oq-erd" userLabel="Price StackView">
-                                                    <rect key="frame" x="20" y="112.5" width="374" height="39.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.99 USD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Od-uvq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="39.5"/>
-                                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="39.5" id="ICu-Nd-R1x"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="29p-jx-3Nl" secondAttribute="bottom" id="1hQ-px-rzR"/>
-                                                <constraint firstItem="apI-Z6-oRP" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="3Wf-ZC-gT9"/>
-                                                <constraint firstItem="VVD-Oq-erd" firstAttribute="top" secondItem="apI-Z6-oRP" secondAttribute="bottom" constant="8" id="47j-o6-waX"/>
-                                                <constraint firstItem="apI-Z6-oRP" firstAttribute="top" secondItem="ezv-Sd-XXA" secondAttribute="bottom" constant="8" id="4N6-e7-5JF"/>
-                                                <constraint firstItem="VVD-Oq-erd" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="8vH-k0-srP"/>
-                                                <constraint firstItem="VVD-Oq-erd" firstAttribute="bottom" secondItem="29p-jx-3Nl" secondAttribute="bottom" id="9Yr-6U-gIt"/>
-                                                <constraint firstAttribute="trailing" secondItem="6ud-g3-aX8" secondAttribute="trailing" constant="20" id="Abp-Ga-z85"/>
-                                                <constraint firstAttribute="trailing" secondItem="apI-Z6-oRP" secondAttribute="trailing" constant="20" id="HjP-wN-u8m"/>
-                                                <constraint firstAttribute="trailing" secondItem="VVD-Oq-erd" secondAttribute="trailing" constant="20" id="MwN-4j-guW"/>
-                                                <constraint firstItem="VVD-Oq-erd" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="NDN-Qe-b3F"/>
-                                                <constraint firstItem="29p-jx-3Nl" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="10" id="QQi-Pf-4g6"/>
-                                                <constraint firstItem="6ud-g3-aX8" firstAttribute="top" secondItem="dNX-Pn-JhW" secondAttribute="top" constant="12" id="ThK-JP-o3o"/>
-                                                <constraint firstItem="29p-jx-3Nl" firstAttribute="top" secondItem="dNX-Pn-JhW" secondAttribute="top" constant="5" id="b61-Wx-Lej"/>
-                                                <constraint firstAttribute="trailing" secondItem="29p-jx-3Nl" secondAttribute="trailing" constant="10" id="cSV-mr-n3N"/>
-                                                <constraint firstAttribute="trailing" secondItem="VVD-Oq-erd" secondAttribute="trailing" constant="20" id="gUz-Nq-1Lz"/>
-                                                <constraint firstItem="6ud-g3-aX8" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="jQZ-fV-Vnz"/>
-                                                <constraint firstItem="ezv-Sd-XXA" firstAttribute="top" secondItem="6ud-g3-aX8" secondAttribute="bottom" constant="8" id="qtX-qM-UfI"/>
-                                                <constraint firstAttribute="trailing" secondItem="ezv-Sd-XXA" secondAttribute="trailing" constant="20" id="xhe-WT-6Fo"/>
-                                                <constraint firstItem="ezv-Sd-XXA" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="zDn-ab-7nV"/>
+                                                <constraint firstAttribute="bottom" secondItem="P0d-9w-7Hb" secondAttribute="bottom" constant="10.5" id="KSM-TI-K8h"/>
+                                                <constraint firstItem="P0d-9w-7Hb" firstAttribute="top" secondItem="dNX-Pn-JhW" secondAttribute="top" constant="10" id="Vkd-5z-rLG"/>
+                                                <constraint firstAttribute="trailing" secondItem="P0d-9w-7Hb" secondAttribute="trailing" constant="20" id="l6i-FU-mgn"/>
+                                                <constraint firstItem="P0d-9w-7Hb" firstAttribute="leading" secondItem="dNX-Pn-JhW" secondAttribute="leading" constant="20" id="u4U-Yf-Ed6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -155,7 +148,6 @@
                                             <outlet property="genreLabel" destination="QlL-fb-LIu" id="8pq-4V-bJF"/>
                                             <outlet property="priceLabel" destination="0lX-Od-uvq" id="VUy-P5-Ios"/>
                                             <outlet property="releaseDateLabel" destination="9cJ-Rw-DSk" id="gf9-MT-fb2"/>
-                                            <outlet property="trackDetailView" destination="29p-jx-3Nl" id="RJi-1j-TK4"/>
                                             <outlet property="trackLabel" destination="ezv-Sd-XXA" id="fqF-2a-Uqb"/>
                                         </connections>
                                     </tableViewCell>
@@ -181,11 +173,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxg-Ns-prs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-88.405797101449281" y="-181.47321428571428"/>
+            <point key="canvasLocation" x="886.95652173913049" y="56.919642857142854"/>
         </scene>
     </scenes>
     <resources>
         <image name="LaunchScreenIcon" width="512" height="512"/>
+        <namedColor name="borderColor">
+            <color red="0.91399997472763062" green="0.5690000057220459" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="buttonColor">
             <color red="0.0" green="0.80000000000000004" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

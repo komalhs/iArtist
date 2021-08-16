@@ -12,7 +12,6 @@
 		4B1FEC7726C99E60009F8993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FEC7526C99E60009F8993 /* Main.storyboard */; };
 		4B1FEC7926C99E65009F8993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FEC7826C99E65009F8993 /* Assets.xcassets */; };
 		4B1FEC7C26C99E65009F8993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FEC7A26C99E65009F8993 /* LaunchScreen.storyboard */; };
-		4B1FEC8726C99E65009F8993 /* iArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FEC8626C99E65009F8993 /* iArtistTests.swift */; };
 		4B1FEC9226C99E65009F8993 /* iArtistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FEC9126C99E65009F8993 /* iArtistUITests.swift */; };
 		4B1FECAD26C9B063009F8993 /* SearchArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECAC26C9B063009F8993 /* SearchArtistViewController.swift */; };
 		4B1FECB226C9B081009F8993 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECB126C9B081009F8993 /* TracksViewController.swift */; };
@@ -27,6 +26,7 @@
 		4B1FECF726C9BE8A009F8993 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECF626C9BE8A009F8993 /* StringExtension.swift */; };
 		4B1FECFC26C9E68A009F8993 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */; };
 		4B1FED0126C9ED7C009F8993 /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */; };
+		4B1FED0E26C9F1AA009F8993 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FED0D26C9F1AA009F8993 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,6 @@
 		4B1FEC7B26C99E65009F8993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1FEC7D26C99E65009F8993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1FEC8226C99E65009F8993 /* iArtistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iArtistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B1FEC8626C99E65009F8993 /* iArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iArtistTests.swift; sourceTree = "<group>"; };
 		4B1FEC8826C99E65009F8993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1FEC8D26C99E65009F8993 /* iArtistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iArtistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1FEC9126C99E65009F8993 /* iArtistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iArtistUITests.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		4B1FECF626C9BE8A009F8993 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
+		4B1FED0D26C9F1AA009F8993 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,18 +123,18 @@
 		4B1FEC6E26C99E60009F8993 /* iArtist */ = {
 			isa = PBXGroup;
 			children = (
-				4B1FECE526C9BD69009F8993 /* Model */,
-				4B1FECCC26C9B5FC009F8993 /* TableViewCell */,
 				4B1FECB626C9B2A5009F8993 /* Coordinator */,
 				4B1FECAB26C9B040009F8993 /* ViewControllers */,
+				4B1FECE526C9BD69009F8993 /* Model */,
+				4B1FECE126C9BD3A009F8993 /* Network Manager */,
+				4B1FECE026C9BD24009F8993 /* Extensions */,
+				4B1FECCC26C9B5FC009F8993 /* TableViewCell */,
 				4B1FEC6F26C99E60009F8993 /* AppDelegate.swift */,
 				4B1FEC7126C99E60009F8993 /* SceneDelegate.swift */,
 				4B1FEC7526C99E60009F8993 /* Main.storyboard */,
 				4B1FEC7826C99E65009F8993 /* Assets.xcassets */,
 				4B1FEC7A26C99E65009F8993 /* LaunchScreen.storyboard */,
 				4B1FEC7D26C99E65009F8993 /* Info.plist */,
-				4B1FECE126C9BD3A009F8993 /* Network Manager */,
-				4B1FECE026C9BD24009F8993 /* Extensions */,
 			);
 			path = iArtist;
 			sourceTree = "<group>";
@@ -142,7 +142,6 @@
 		4B1FEC8526C99E65009F8993 /* iArtistTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B1FEC8626C99E65009F8993 /* iArtistTests.swift */,
 				4B1FEC8826C99E65009F8993 /* Info.plist */,
 				4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */,
 				4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */,
@@ -192,6 +191,7 @@
 				4B1FECEC26C9BE6C009F8993 /* UIViewControllerExtension.swift */,
 				4B1FECF126C9BE79009F8993 /* DateExtension.swift */,
 				4B1FECF626C9BE8A009F8993 /* StringExtension.swift */,
+				4B1FED0D26C9F1AA009F8993 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,6 +346,7 @@
 				4B1FECF226C9BE79009F8993 /* DateExtension.swift in Sources */,
 				4B1FECE726C9BD7B009F8993 /* Tracks.swift in Sources */,
 				4B1FECB226C9B081009F8993 /* TracksViewController.swift in Sources */,
+				4B1FED0E26C9F1AA009F8993 /* UIViewExtension.swift in Sources */,
 				4B1FECBD26C9B2C7009F8993 /* MainCoordinator.swift in Sources */,
 				4B1FECAD26C9B063009F8993 /* SearchArtistViewController.swift in Sources */,
 				4B1FECB826C9B2BB009F8993 /* Coordinator.swift in Sources */,
@@ -364,7 +365,6 @@
 			files = (
 				4B1FED0126C9ED7C009F8993 /* StringExtensionsTest.swift in Sources */,
 				4B1FECFC26C9E68A009F8993 /* NetworkManagerTest.swift in Sources */,
-				4B1FEC8726C99E65009F8993 /* iArtistTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
