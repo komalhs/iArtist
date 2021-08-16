@@ -8,6 +8,10 @@
 ## Overview
 
 iArtist is an app that allows users to search for artists using the iTunes Search API.
+
+## Technologies
+
+
 - Swift
 - MVC
 - Modeling complex endpoints
@@ -20,9 +24,10 @@ iArtist is an app that allows users to search for artists using the iTunes Searc
 
 ### Prerequisites
 
-- A Mac running Xcode
+- A Mac running Xcode 11.0+
+- iOS Supported Version: 13.0+
 
-### Installation
+### Installation Instruction
 
 1. Clone or download the project to your local machine
 2. Open the project in Xcode
