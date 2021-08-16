@@ -18,7 +18,7 @@ iArtist is an app that allows users to search for artists using the iTunes Searc
 - Coordinator Pattern for Navigation
 - Storyboard for UI
 - Extensions
-- Unit text Case
+- Unit test Cases
 
 ## Getting Started
 
