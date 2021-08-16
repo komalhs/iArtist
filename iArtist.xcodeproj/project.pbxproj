@@ -25,6 +25,8 @@
 		4B1FECED26C9BE6C009F8993 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECEC26C9BE6C009F8993 /* UIViewControllerExtension.swift */; };
 		4B1FECF226C9BE79009F8993 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECF126C9BE79009F8993 /* DateExtension.swift */; };
 		4B1FECF726C9BE8A009F8993 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECF626C9BE8A009F8993 /* StringExtension.swift */; };
+		4B1FECFC26C9E68A009F8993 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */; };
+		4B1FED0126C9ED7C009F8993 /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		4B1FECEC26C9BE6C009F8993 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4B1FECF126C9BE79009F8993 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4B1FECF626C9BE8A009F8993 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+		4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			children = (
 				4B1FEC8626C99E65009F8993 /* iArtistTests.swift */,
 				4B1FEC8826C99E65009F8993 /* Info.plist */,
+				4B1FECFB26C9E68A009F8993 /* NetworkManagerTest.swift */,
+				4B1FED0026C9ED7C009F8993 /* StringExtensionsTest.swift */,
 			);
 			path = iArtistTests;
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1FED0126C9ED7C009F8993 /* StringExtensionsTest.swift in Sources */,
+				4B1FECFC26C9E68A009F8993 /* NetworkManagerTest.swift in Sources */,
 				4B1FEC8726C99E65009F8993 /* iArtistTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class TracksViewController: UIViewController, Storyboarded, UITableViewDataSourc
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+        //self.navigationController?.navigationBar.isHidden = true
         getTracksData()
     }
     
@@ -34,7 +34,7 @@ class TracksViewController: UIViewController, Storyboarded, UITableViewDataSourc
                 }
                 
                 self.tracksArray = trackData.trackList
-                print(self.tracksArray)
+                print(trackData.trackList)
                 DispatchQueue.main.async {
                     self.tracksTableView.reloadData()
                 }
