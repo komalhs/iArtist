@@ -27,7 +27,7 @@ iArtist is an app that allows users to search for artists using the iTunes Searc
 - A Mac running Xcode 11.0+
 - iOS Supported Version: 13.0+
 
-### Installation Instruction
+### Installation Instructions
 
 1. Clone or download the project to your local machine
 2. Open the project in Xcode
